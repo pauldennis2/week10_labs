@@ -1,0 +1,9 @@
+## Hierarchical Feature Extraction in CNNs
+
+Convolutional Neural Networks (CNNs) are a specialized type of neural network, ideal for image processing. Like an onion, they have layers, but when you cut into a CNN, you can see the structure that allows us to derive insights from images. Early layers are responsible for detecting simple features in the image such as edges and textures. They then pass their analysis to middle layers, which focus on indentifying more complex structures and shapes. This is in turn passed to the deep layers, which focus on full object recognition.
+
+In our case, the early layers will be looking for simple edges and the texture/grain of the manufactured parts under review. Middle layers would focus on detecting patterns like scratches or other irregularities, but they would not make defect determinations—recognizing the full defect and differentiating minor scratches or imperfections from critical damage is the job of the deep layers.
+
+This layered approach mitigates false positives by ensuring that defect classification is refined at each stage. Initial texture inconsistencies are flagged early, but deeper layers determine whether these inconsistencies actually indicate functional damage. The CNN's ability to extract progressively complex features allows it to distinguish between surface-level imperfections and true manufacturing defects—reducing unnecessary rejections while maintaining quality control.
+
+CNNs offer a powerful approach to defect detection by processing features in a hierarchical manner—from simple edges to full defect classification. By designing the CNN architecture thoughtfully, our company can automate quality inspections efficiently, minimizing human error while maintaining high safety and quality standards.
